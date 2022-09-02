@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ----------Part 1----------- -->
+    <!-- <div class="container">
+      <h1 id="main-heading">Favourite Movie</h1>
+      <ul>
+        <li class="list-items">The Matrix</li>
+        <li class="list-items">Star Wars</li>
+        <li class="list-items">Harry Potter</li>
+        <li class="list-items">Lord of the Rings</li>
+        <li class="list-items">Marvel</li>
+      </ul>
+    </div> -->
+
+    <!-- ----------Part 2----------- -->
+
+    <!-- <h1>Event Listeners</h1>
+
+    <div class="container">
+      <div class="boxes box-1">
+        <h1 id="heading">Example 1</h1>
+        <button onclick="alert('I love js')">Enter</button>
+      </div>
+      <div class="boxes box-2">
+        <h1 id="heading">Example 2</h1>
+        <button class="btn-2">Enter</button>
+      </div>
+      <div class="boxes box-3">
+        <h1 id="heading">Example 3</h1>
+        <button class="btn-3">Enter</button>
+      </div>
+    </div>
+
+    <button onclick="showContent()">Click Me</button>
+    <div id="myContent">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed pariatur
+      perferendis vitae explicabo deserunt, rem neque quis dolores et modi?
+    </div> -->
+
+    <!------------- Event Propagation----------- -->
+    <!-- <p>What is event propagation?</p>
+    <p>
+      Propagation refers to how events travel through the Document Object Model
+      (DOM) tree. The DOM tree is the structure which contains
+      parent/child/sibling elements in relation to each other. You can think of
+      propagation as electricity running through a wire, until it reaches its
+      destination. The event needs to pass through every node on the DOM until
+      it reaches the end, or if it is forcibly stopped.
+    </p>
+    <p>
+      1. Bubbling: When an event happens on a component, it first runs the event
+      handler on it, then on its parent component, then all the way up on other
+      ancestors’ components. By default, all event handles through this order
+      from center component event to outermost component event.
+    </p>
+    <div id="div1">
+      Component 1
+      <div id="div2">
+        component 2
+        <div id="div3">component 3</div>
+      </div>
+    </div>
+    <br />
+    <p>
+      2. Capturing: It is the opposite of bubbling. The event handler is first
+      on its parent component and then on the component where it was actually
+      wanted to fire that event handler. In short, it means that the event is
+      first captured by the outermost element and propagated to the inner
+      elements. It is also called trickle down.
+    </p>
+
+    <div id="div4">
+      Component 4
+      <div id="div5">
+        component 5
+        <div id="div6">component 6</div>
+      </div>
+    </div> -->
+
+    <!----------------- Event Delegation---------------------- -->
+    <h1>What is Event Delegation?</h1>
+    <p>
+      Event delegation is one of the most potent events handling patterns. It
+      allows users to append a single event listener to a parent element that
+      adds it to all of its present and future descendants that match a
+      selector. <br>
+      The main steps involve: 
+      <ol>
+        <li>Add a handler on a container</li>
+        <li>Add the event.target source element on the handler</li>
+        <li>Handle the event</li>
+      </ol>
+    </p>
+    <ul id="sports">
+      <li id="football">Football</li>
+      <li id="basketball">Basketball</li>
+      <li id="boxing">Boxing</li>
+      <li id="tennis">Tennis</li>
+      <li id="golf">Golf</li>
+    </ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!--- https://youtu.be/5fb2aPlgoys?t=4281 --->
